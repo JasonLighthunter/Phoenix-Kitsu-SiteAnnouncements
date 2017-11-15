@@ -1,9 +1,3 @@
-//
-//  SiteAnnouncement.swift
-//  Phoenix-Kitsu-SiteAnnouncements
-//
-//  Created by Job Cuppen on 15/11/2017.
-
 import PhoenixKitsuCore
 
 public class SiteAnnouncement: KitsuObject {
@@ -12,7 +6,7 @@ public class SiteAnnouncement: KitsuObject {
   public let objectID: String
   public let type: String
   public let links: Links
-  public private(set) var attributes: SiteAnnouncementAttributes?
+  public let attributes: SiteAnnouncementAttributes?
 
   private enum CodingKeys: String, CodingKey {
     case objectID = "id"
@@ -27,8 +21,8 @@ public class SiteAnnouncementAttributes: KitsuObjectAttributesWithTimestamp {
   public let updatedAt: String
   public let title: String
   public let description: String?
-  public private(set) var imageURL: String?
-  public private(set) var link: String?
+  public let imageURL: String?
+  public let link: String?
 
   private enum CodingKeys: String, CodingKey {
     case createdAt
