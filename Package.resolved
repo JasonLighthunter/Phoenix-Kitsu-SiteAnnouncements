@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PhoenixKitsuCore",
+        "repositoryURL": "https://github.com/JasonLighthunter/Phoenix-Kitsu-Core.git",
+        "state": {
+          "branch": "setup",
+          "revision": "3b8d01dcfb5e898312b8649612ef4f3990cd9359",
+          "version": null
+        }
+      },
+      {
+        "package": "Requestable",
+        "repositoryURL": "https://github.com/JasonLighthunter/Requestable.git",
+        "state": {
+          "branch": null,
+          "revision": "b8691cc0836c767c7ab534e7ef9e994892b94392",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
