@@ -6,8 +6,7 @@ import PackageDescription
 let package = Package(
   name: "PhoenixKitsuSiteAnnouncements",
   products: [
-    .library(name: "PhoenixKitsuSiteAnnouncements",
-             targets: ["PhoenixKitsuSiteAnnouncements"])
+    .library(name: "PhoenixKitsuSiteAnnouncements", targets: ["PhoenixKitsuSiteAnnouncements"])
   ],
   dependencies: [
     .package(url: "https://github.com/JasonLighthunter/Phoenix-Kitsu-Core.git", .branch("setup"))
