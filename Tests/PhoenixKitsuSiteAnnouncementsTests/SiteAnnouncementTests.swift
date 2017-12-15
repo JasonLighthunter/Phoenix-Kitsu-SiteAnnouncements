@@ -1,9 +1,3 @@
-//
-//  SiteAnnouncementTests.swift
-//  PhoenixKitsuSiteAnnouncements
-//
-//  Created by Job Cuppen on 15/11/2017.
-
 import XCTest
 @testable import PhoenixKitsuSiteAnnouncements
 
