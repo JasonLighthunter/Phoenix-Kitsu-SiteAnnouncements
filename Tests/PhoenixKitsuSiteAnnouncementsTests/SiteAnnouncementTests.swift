@@ -50,7 +50,8 @@ class SiteAnnouncementTests: XCTestCase {
   ]
 
   let invalidMissingDataJSON: [String : Any] = [
-    "id" : "",
+    "id" : "4",
+    "type" : "siteAnnouncements",
     "links" : [
       "self" : "https://kitsu.io/api/edge/site-announcements/4"
     ],
@@ -63,8 +64,8 @@ class SiteAnnouncementTests: XCTestCase {
   ]
   
   let invalidNilDataJSON: [String : Any?] = [
-    "id" : nil,
-    "type" : nil,
+    "id" : "4",
+    "type" : "siteAnnouncements",
     "links" : [
       "self" : "https://kitsu.io/api/edge/site-announcements/4"
     ],
@@ -178,8 +179,14 @@ class SiteAnnouncementTests: XCTestCase {
     } else {
       siteAnnouncement = nil
     }
-
-    XCTAssertNil(self.siteAnnouncement)
+    siteAnnouncementAttributes = siteAnnouncement?.attributes
+    
+    XCTAssertNotNil(self.siteAnnouncement)
+    
+    XCTAssertEqual(self.siteAnnouncement?.objectID, "4")
+    XCTAssertEqual(self.siteAnnouncement?.type, "siteAnnouncements")
+    
+    XCTAssertNil(self.siteAnnouncementAttributes)
   }
   
   func testSiteAnnouncementInvalidNilData() {
@@ -191,7 +198,13 @@ class SiteAnnouncementTests: XCTestCase {
     } else {
       siteAnnouncement = nil
     }
+    siteAnnouncementAttributes = siteAnnouncement?.attributes
     
-    XCTAssertNil(self.siteAnnouncement)
+    XCTAssertNotNil(self.siteAnnouncement)
+    
+    XCTAssertEqual(self.siteAnnouncement?.objectID, "4")
+    XCTAssertEqual(self.siteAnnouncement?.type, "siteAnnouncements")
+    
+    XCTAssertNil(self.siteAnnouncementAttributes)
   }
 }
